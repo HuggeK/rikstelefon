@@ -13,6 +13,17 @@ This project started when my family bought an old BC 310 telephone on an auction
 
 '\src' contains the code for using the PCNT library to decode the method, the ESP-IDF project.
 
+## How to run:
+
+Setup ESP-IDF 6.0. I used , do not forget to set the PATH variables for the ESP IDF and tools. Also set the targeted board, I used a ESP32C6 but it should work on other models too.
+Then build by running in the ESP-IDF shell: `idf.py build` and then flash it to the connected ESP32C6 by running `idf.py -p PORT flash` where PORT is the port of the connected ESP32 by UART. You can also monitor the output by running `idf.py -p PORT monitor`.
+
+## TODO:
+
+- [ ] Basic read of the pulses, sending it out on UART when the number dialed have been determined.
+- [ ] Thread configuration with support of providing credentials in `main\Kconfig.projbuild`.
+- [ ] Matter support.
+
 
 ## Pictures of the telephone:
 
@@ -95,17 +106,21 @@ My first goal is to use the PCNT libary which is provided by ESP-IDF to decode t
 - [2] https://digitaltmuseum.se/021026308218/telefonapparat
 - [3] https://sv.wikipedia.org/wiki/Nummerskiva
 
-### The ESP32 and the Pulse Count Controller (PCNT):
-- https://docs.espressif.com/projects/esp-idf/en/v5.5.3/esp32c6/get-started/index.html
-- https://docs.espressif.com/projects/esp-idf/en/v5.5.3/esp32c6/api-reference/peripherals/pcnt.html
-- https://documentation.espressif.com/esp32-c6_technical_reference_manual_en.pdf#pcnt
-- https://github.com/espressif/esp-idf/blob/release/v5.3/components/esp_driver_pcnt/include/driver/pulse_cnt.h
-- https://github.com/espressif/esp-idf/tree/cc5440f/examples/peripherals/pcnt
+### Seting up ESP-IDF:
+- https://docs.espressif.com/projects/esp-idf/en/v6.0/esp32c6/get-started/index.html
+- https://docs.espressif.com/projects/esp-idf/en/v6.0/esp32c6/get-started/windows-start-project.html
+- https://docs.espressif.com/projects/esp-idf/en/v6.0/esp32c6/api-guides/build-system.html#idf-py
 - 
+
+### Esp32 Pulse Count Controller (PCNT):
+- https://docs.espressif.com/projects/esp-idf/en/v6.0/esp32c6/api-reference/peripherals/pcnt.html
+- https://documentation.espressif.com/esp32-c6_technical_reference_manual_en.pdf#pcnt
+- https://github.com/espressif/esp-idf/blob/release/v6.0/components/esp_driver_pcnt/include/driver/pulse_cnt.h
+- https://github.com/espressif/esp-idf/tree/cc5440f/examples/peripherals/pcnt
 
 ### Matter Device using OpenThread:
 - https://docs.espressif.com/projects/esp-matter/en/latest/esp32/
-- https://docs.espressif.com/projects/esp-idf/en/v5.5.3/esp32c6/api-guides/openthread.html
+- https://docs.espressif.com/projects/esp-idf/en/v6.0/esp32c6/api-guides/openthread.html
 - 
 
 
