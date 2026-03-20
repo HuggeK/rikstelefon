@@ -18,7 +18,7 @@ static const char *TAG = "example";
 #define EXAMPLE_PCNT_HIGH_LIMIT 100
 #define EXAMPLE_PCNT_LOW_LIMIT  -100
 
-#define EXAMPLE_EC11_GPIO_A 0
+#define EXAMPLE_EC11_GPIO_A 5
 #define EXAMPLE_EC11_GPIO_B 2
 
 static bool example_pcnt_on_reach(pcnt_unit_handle_t unit, const pcnt_watch_event_data_t *edata, void *user_ctx)

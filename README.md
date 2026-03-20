@@ -141,7 +141,7 @@ When researching this project I came to the realization that in sweden dials was
 
 When picking up this project on the 20 of March in 2026 I saw that 10 minutes prior Espressif launched their ESP-IDF suite of tools in version 6.0. [Link to the blog post about their new launch](https://developer.espressif.com/blog/2026/03/idf-v6-0-release/#breaking-changes-know-before-you-upgrade) I then decided to try to use this becuase the blog post mentioned Legacy drivers removed: which the PCNT library I had found was mentioned. My hope is that using the new version I can make my entire home network running on WPA3 only for once.
 
-
+When configuring the ESP-IDF with VS Code it was needed to run `ESP-IDF: Add VS Code Configuration Folder` in the Command Palette in VS Code for the C/C++ extension to recognize the header files. You may need to rerun till command for your machine´s local environment.
 
 ### License: 
 
