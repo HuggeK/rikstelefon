@@ -1,4 +1,4 @@
-![alt text](IMG_8168.JPEG)
+![alt text](pictures/IMG_8168.JPEG)
 
 # rikstelefon
 A small project for using the libary Pulse Count Controller (PCNT) from ESP-IDF on a ESP32-C6 board to decode the dial on a an old BC 310(Televerkets catalogue), the model is from 1924, when the first automatic switch was introduced (Norra Vasa).
